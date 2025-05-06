@@ -6,9 +6,14 @@ runs:
     - name: Hello
       run: echo "Hello World!"
       shell: bash
+    - run: cat README.md
+      shell: bash
     - uses: actions/checkout@v4
       with:
         repository: rlipscombe/ghaction
         ref: main
-    - run: cat hello.txt
+        path: ghaction
+    - run: cat ghaction/hello.txt
+      shell: bash
+    - run: cat README.md
       shell: bash
