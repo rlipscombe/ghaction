@@ -10,3 +10,5 @@ runs:
       with:
         repository: rlipscombe/ghaction
         ref: main
+    - run: cat hello.txt
+      shell: bash
