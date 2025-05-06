@@ -6,3 +6,7 @@ runs:
     - name: Hello
       run: echo "Hello World!"
       shell: bash
+    - uses: actions/checkout@v4
+      with:
+        repository: rlipscombe/ghaction
+        ref: main
