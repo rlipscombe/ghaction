@@ -1,0 +1,8 @@
+name: ghaction
+description: "GitHub Action Spike: Action"
+runs:
+  using: "composite"
+  steps:
+    - name: Hello
+      run: echo "Hello World!"
+      shell: bash
